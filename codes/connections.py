@@ -5,7 +5,6 @@ import colorsys
 
 
 def generate_distinct_colors(n):
-    """生成n个不同的HSL颜色"""
     colors = []
     for i in range(n):
         hue = i / n
@@ -16,7 +15,6 @@ def generate_distinct_colors(n):
 
 
 def generate_year_intervals():
-    """生成年份区间列表"""
     intervals = []
     for start in range(1935, 2025, 5):
         end = start + 4
@@ -25,22 +23,16 @@ def generate_year_intervals():
 
 
 def load_and_process_data(file_path):
-    """加载并处理Excel数据"""
     df = pd.read_excel(file_path)
     df[['Latitude', 'Longitude']] = df['Coordinates'].str.split(',', expand=True).astype(float)
     return df
 
 
 def create_interactive_map(df):
-    """创建交互式地图"""
     year_intervals = generate_year_intervals()
-
-    # 获取所有非"NO DATA"的Publisher并为每个分配颜色
     unique_publishers = df[df['Publisher'] != "NO DATA"]['Publisher'].unique()
     colors = generate_distinct_colors(len(unique_publishers))
     publisher_colors = dict(zip(unique_publishers, colors))
-
-    # 转换数据和颜色映射为JSON
     data_json = df.to_json(orient='records')
     year_intervals_json = json.dumps(year_intervals)
     color_mapping_json = json.dumps(publisher_colors)
@@ -407,7 +399,7 @@ def create_interactive_map(df):
 </html>
     """
 
-    # 保存HTML文件
+
     with open("exhibition_map.html", "w", encoding="utf-8") as f:
         f.write(html_content)
 
@@ -416,7 +408,6 @@ def create_interactive_map(df):
 
 
 def main():
-    """主函数"""
     file_path = r"C:\Users\debuf\Desktop\DH_PROJECT\modified_dumbraton.xlsx"
     df = load_and_process_data(file_path)
     create_interactive_map(df)
