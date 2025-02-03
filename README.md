@@ -1,6 +1,6 @@
-# VU_DH-SA_GROUP6
+# VU DH SA GROUP6
 
-This repository contains the analysis and visualization of theMapping Co-Exhibition Networks project.
+This repository contains the analysis and visualization of the Mapping Co-Exhibition Networks project.
 
 ## Repository Structure
 
