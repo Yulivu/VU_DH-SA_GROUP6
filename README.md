@@ -1,6 +1,6 @@
 # VU_DH-SA_GROUP6
 
-This repository contains the analysis and visualization of the Dumbarton dataset as part of the VU Digital Humanities and Spatial Analysis project.
+This repository contains the analysis and visualization of theMapping Co-Exhibition Networks project.
 
 ## Repository Structure
 
