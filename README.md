@@ -4,23 +4,23 @@ This repository contains the analysis and visualization of the Dumbarton dataset
 
 ## Repository Structure
 
-### `/codes`
+### `codes`
 Contains all scripts used for data processing and visualization:
 - Data processing scripts for cleaning and transforming the original dataset
 - Visualization code for generating analytical outputs
 
-### `/datasets`
+### `datasets`
 Contains both original and processed datasets:
 - Original data files provided by supervisor
 - Modified Dumbarton dataset (`modified_dumbarton.xlsx`) with our preprocessing applied
 
-### `/results`
+### `results`
 Final outputs of our analysis:
 - 3 visualization outputs
 - Research poster
 - Final paper
 
-### `/visualizations`
+### `visualizations`
 Collection of all visualizations generated during the project:
 - Intermediate visualization results
 - Final visualization outputs
