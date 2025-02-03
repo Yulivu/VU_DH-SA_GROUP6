@@ -6,8 +6,7 @@ This repository contains the analysis and visualization of the Mapping Co-Exhibi
 
 ### `codes`
 Contains all scripts used for data processing and visualization:
-- Data processing scripts for cleaning and transforming the original dataset
-- Visualization code for generating analytical outputs
+Visualization code for generating analytical outputs
 
 ### `datasets`
 Contains both original and processed datasets:
@@ -24,7 +23,6 @@ Final outputs of our analysis:
 Collection of all visualizations generated during the project:
 - Intermediate visualization results
 - Final visualization outputs
-- Supporting visual materials
 
 Group 6 Members:
 - [X.Wang (Xingyun)]
